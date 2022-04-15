@@ -18,12 +18,13 @@ console.log("sum2", sum2);
 // Function using ...rest. Will use a for loop to iterate through the array
 const sumRest = (a, b, c, ...rest) => {
     let sum = a + b + c;
-    for (let i of ) {
+    // Using a for of loop
+    for (let i of rest) {
         // Adding each additional number to the sum
         sum += i
     }
     return sum;
 }
-
 let sum3 = sumRest(1, 2, 3, 4, 5, 6);
+// Logs the correct sum of 21
 console.log("sum3", sum3);
